@@ -197,7 +197,6 @@ class ProductoSeeder extends Seeder
                     'Crimen y castigo',
 
                 ];
-            // Repite para otras categorías
             default:
                 return [];
         }
