@@ -33,7 +33,7 @@ class PuestoSeeder extends Seeder
             $categoria = Categoria::where('nombre', $array[$index])->first();
             $productos = Producto::where('categoria_id', $categoria->id)->pluck('id');
             $puesto->productos()->attach($productos, [
-                'imagen' => 'imagen.' . rand(1, 10000) . '.jpg',
+                'imagen' => 'https://picsum.photos/200',
                 'precio' => rand(100, 1000)
             ]);
         }
